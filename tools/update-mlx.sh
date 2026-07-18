@@ -11,7 +11,7 @@ then
 fi
 
 # copy mlx-c headers to build area
-rm -f Source/Cmlx/include/mlx/c/*
+rm -f Source/Cmlx/include/mlx/c/*(N)
 cp Source/Cmlx/mlx-c/mlx/c/*.h Source/Cmlx/include/mlx/c
 
 # run the command to do the build-time code generation for Metal
@@ -62,6 +62,7 @@ make \
     steel_gemm_gather_nax \
     steel_gemm_masked \
     steel_gemm_segmented \
+    steel_gemm_segmented_nax \
     steel_gemm_splitk \
     steel_gemm_splitk_nax \
     ternary \
